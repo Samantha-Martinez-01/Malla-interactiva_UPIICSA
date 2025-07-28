@@ -1,0 +1,109 @@
+/* diseño de la pagina en general*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0aff; /* cambio de color*/
+  margin: 0;
+  padding: 20px;
+}
+/* el como se van a observar el codigo html*/
+.contenedor_malla {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.semestre_columna {
+  background-color: #c68eceff;
+  border-radius: 15px;
+  padding: 11px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.semestre_columna h3 {
+  text-align: center;
+  color: #0a0a0aff;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.materia {
+  background-color: #800080; /* Morado fuerte */
+  color: white;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.materia:hover {
+  background-color: #a033a0;
+}
+
+/* Estado cuando una materia ha sido marcada como cursada */
+.materia.cursada {
+  background-color: #b9679eff;
+  color: #b91583ff;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+/* Estilo para submaterias (como las materias normales) */
+.submaterias .materia {
+  font-size: 0.95rem;
+  background-color: #800080; /* Igual que materia normal */
+}
+
+/* Mostrar submaterias solo si la optativa está seleccionada */
+.submaterias {
+  display: none;
+  margin-top: 6px;
+}
+
+/* Estilo del contenedor de optativa-titulo como una materia */
+.optativa-titulo {
+  background-color: #800080;
+  color: white;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Estado cuando una materia ha sido marcada como cursada */
+.materia.cursada {
+  background-color: #b9679eff;
+  color: #b91583ff;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.optativa-titulo:hover {
+  background-color: #a033a0;
+}
+.optativa-opcion h3 {
+   color: #faf7f7ff
+   }
+/* Botón de reiniciar progreso (más pequeño y al final) */
+.btn-reiniciar {
+  margin: 40px auto 10px;
+  display: block;
+  padding: 6px 14px;
+  background-color: #b32bb8ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+  background-color: #5c0464ff;
+}
